@@ -47,5 +47,3 @@ MIRYOKU_X(GAME,   "Game")
 &kp  LCTRL,  &kp A,  &kp S,     &kp D,     &kp F,      &kp G,          &kp H,    &kp J,   &kp K,      &kp L,    &kp DQT,  XXX,   \
 &kp LSHIFT,  &kp Z,  &kp X,     &kp C,     &kp V,      &kp B,          &kp N,    &kp M,   &kp COMMA,  &kp DOT,  &kp FSLH, XXX,  \
              XXX,   XXX,        &kp SPACE, &kp LALT,   &kp M,          &kp RET,  &kp ESC, &kp DEL,    XXX,      XXX
-
-#define MIRYOKU_LAYERMAPPING_GAME MIRYOKU_MAPPING
