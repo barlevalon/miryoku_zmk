@@ -54,7 +54,7 @@ MIRYOKU_X(GAME,   "Game")
                       K32  K33  K34       K35  K36  K37
 
 #define MIRYOKU_LAYER_GAME \
-&kp Q,  &kp W,     &kp E,     &kp R,      &kp T,          &kp Y,    &kp U,    &kp I,      &kp O,    &kp P, \
-&kp A,  &kp S,     &kp D,     &kp F,      &kp G,          &kp H,    &kp J,    &kp K,      &kp L,    &kp DQT, \
-&kp Z,  &kp X,     &kp C,     &kp V,      &kp B,          &kp N,    &kp M,    &kp COMMA,  &kp DOT,  &kp FSLH, \
-  XXX,    XXX,     &kp SPACE, &kp LALT,   &kp M,          &kp RET,  &kp BSPC, &kp DEL,    XXX,      XXX
+&kp Q,  &kp W,     &kp E,     &kp R,      &kp T,             &kp Y,    &kp U,    &kp I,      &kp O,    &kp P, \
+&kp A,  &kp S,     &kp D,     &kp F,      &kp G,             &kp H,    &kp J,    &kp K,      &kp L,    &kp DQT, \
+&kp Z,  &kp X,     &kp C,     &kp V,      &kp B,             &kp N,    &kp M,    &kp COMMA,  &kp DOT,  &kp FSLH, \
+  XXX,    XXX,     &kp SPACE, &kp LALT,   U_LT(U_NUM, M),    &kp RET,  &kp BSPC, &kp DEL,    XXX,      XXX
