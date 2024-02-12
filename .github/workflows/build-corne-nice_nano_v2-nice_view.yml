@@ -17,4 +17,4 @@ jobs:
       alphas: '["qwerty"]'
       nav: '["vi"]'
       clipboard: '["mac"]'
-      kconfig: '["CONFIG_ZMK_DISPLAY=y CONFIG_ZMK_EXT_POWER=y"]'
+      kconfig: '["CONFIG_ZMK_DISPLAY=y CONFIG_ZMK_EXT_POWER=y CONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
