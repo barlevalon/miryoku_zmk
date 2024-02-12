@@ -20,16 +20,16 @@ MIRYOKU_X(FUN,    "Fun") \
 MIRYOKU_X(GAME,   "Game")
 
 #define U_BASE   0
-#define U_EXTRA  1
-#define U_TAP    2
-#define U_BUTTON 3
-#define U_NAV    4
-#define U_MOUSE  5
-#define U_MEDIA  6
-#define U_NUM    7
-#define U_SYM    8
-#define U_FUN    9
-#define U_GAME   10
+#define U_GAME   1
+#define U_EXTRA  2
+#define U_TAP    3
+#define U_BUTTON 4
+#define U_NAV    5
+#define U_MOUSE  6
+#define U_MEDIA  7
+#define U_NUM    8
+#define U_SYM    9
+#define U_FUN    10
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
      K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
