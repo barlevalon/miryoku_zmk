@@ -31,15 +31,21 @@ MIRYOKU_X(FUN,    "Fun")
 #define U_SYM    9
 #define U_FUN    10
 
+ZMK_MACRO(tmux_sesh,
+    wait-ms = <40>;
+    tap-ms = <40>;
+    bindings = <&kp GRAVE &kp T>;
+)
+
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
      K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
      K10, K11, K12, K13, K14,      K15, K16, K17, K18, K19, \
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&tog U_GAME  K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  PWD \
-&kp   CAPS  K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  RAY \
-       XXX  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  TBS \
+  &tmux_sesh  K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  TBS \
+  &kp CAPS    K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  RAY \
+       PWD    K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &tog U_GAME \
                       K32  K33  K34       K35  K36  K37
 
 #define MIRYOKU_LAYERMAPPING_GAME( \
@@ -48,9 +54,9 @@ MIRYOKU_X(FUN,    "Fun")
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp TAB     K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &tog U_GAME \
-&kp LCTRL   K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  &kp ESC \
-&kp LSHIFT  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  XXX \
+&kp TAB     K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &kp ESC \
+&kp LCTRL   K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  XXX \
+&kp LSHIFT  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &tog U_GAME \
                       K32  K33  K34       K35  K36  K37
 
 #define MIRYOKU_LAYER_GAME \
