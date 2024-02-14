@@ -31,17 +31,7 @@ MIRYOKU_X(FUN,    "Fun")
 #define U_SYM    9
 #define U_FUN    10
 
-/ { \
-    macros { \
-      tmux_sesh: tmux_sesh { \
-        compatible = "zmk,behavior-macro"; \
-        #binding-cells = <0>; \
-        wait-ms = <40>; \
-        tap-ms = <40>; \
-        bindings = <&kp GRAVE &kp T>; \
-      }; \
-    }; \
-  };
+U_MACRO(tmux_sesh, bindings = <&kp GRAVE &kp T>;)
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
      K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
